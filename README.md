@@ -21,6 +21,7 @@ Submissions are evaluated on classification accuracy (the percent of labels that
 
 ## Dataset
 [Kaggle dataset](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
+We also include dataset in this repo : train.tsv , test.tsv , sampleSubmission.csv
 
 ## Our approach
 Our approach is to use TF-IDF to vectorize reviews. Model we use is One versus Rest (a Logistic Regression version)
