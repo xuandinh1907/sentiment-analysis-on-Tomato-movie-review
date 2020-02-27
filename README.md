@@ -21,7 +21,22 @@ Submissions are evaluated on classification accuracy (the percent of labels that
 
 ## Dataset
 [Kaggle dataset](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
-We also include dataset in this repo : train.tsv , test.tsv , sampleSubmission.csv
+The dataset is comprised of tab-separated files with phrases from the Rotten Tomatoes dataset.The train/test split has been preserved for the purposes of benchmarking,but the sentences have been shuffled from their original order.Each phrase has a PhraseId.Each sentence has a SentenceId.Phrases that are repeated (such as short/commond words) are only included once in the data
+
+- train.tsv contains the phrases and their associated sentiment labels.Kaggle have additionally provided a SentenceId so that you can track which phrases belong to a single sentence
+
+- test.tsv contains just phrases.You must assign a sentiment label to each phrase
+
+The sentiment labels are :
+0 - negative
+
+1 - somewhat negative
+
+2 - neutral
+
+3 - somewhat positive
+
+4 - positive
 
 ## Our approach
 Our approach is to use TF-IDF to vectorize reviews. Model we use is One versus Rest (a Logistic Regression version)
